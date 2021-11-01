@@ -1,0 +1,128 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Tony Tang
+ */
+
+package <insert>
+
+- Libraries needed <insert>
+
+class todolist {
+    //todolist is the list clicked on inside the main tab of the app
+    - added to the mainMenu (100x)
+    - can edit a description of the item
+    - can delete an item
+    - can make an item as complete/incomplete
+    - can show only completed/uncompleted items
+  -----------------------------------------------------------------
+  pseudocode:
+
+    stores a name string variable
+
+    stores a description string variable
+
+    stores a date value
+
+    stores items:
+        allocate size 100 of items in from of array/stacks/queues
+
+            - each item can hold a description string variable
+
+            - each item can hold a value determining whether it is completed (starts off as incomplete)
+
+    createItem {
+        //this method creates an item inside a todolist
+        - open up the New Item.fxml Once details are entered, send them to the description string variable
+        - display the new Item inside the todolist
+    }
+
+    deleteItem {
+        //this method deletes an item inside a todolist
+    }
+
+    editItem {
+        //this method allows one to edit an item already inside a list
+        - open the New item edit.fxml Once details are entered, overwrite the specific desc. string variable
+        - update the todolist, so it has the new details.
+    }
+
+    MarkasDone {
+        //this method will mark the item as complete
+        - change the value of the specific item to the complete value
+        - update the todoList window to show that specific item as complete
+    }
+
+    MarkasUndone {
+        //this method will mark the item as incomplete
+        - change the value of the specific item to the incomplete value
+        - update the todolist window to show that specific item as incomplete
+    }
+
+    showCompleted {
+        //this function changes the GUI in the todolist to show only completed items
+    }
+
+    showUncompleted {
+        //this function changes the GUI in the todolist to show only uncompleted items
+    }
+
+    showAll method {
+        //this function changes the GUI in the todolist to show all items
+    }
+
+}
+
+class mainMenu {
+       //main app is the main of application
+       - can create todolist
+       - can delete todolist
+       - can edit todolist
+       - can save a singular todolist
+       - can save all todolist
+    -------------------------------------------------------
+    pseudocode:
+
+    create an array/stack (size 100) of todolist
+
+    open the Mock GUI.fxml
+
+    createNewTodo {
+        //creates a new todolist from the todoList class
+        - opens the Create New.fxml and once all the data is inputted, its then is displayed onto the mainMenu GUI
+        - creates and stores it into the appropriate array index that needs to be filled
+    }
+
+    deleteTodo {
+        //deletes a todolist when called
+        - makes sure that it's removed from the stack/array
+        - updates the GUI, so it removes the deleted todoList
+    }
+
+    editTodo {
+        //edits a specific todolist
+        - opens the Edit.fxml
+        - updates the GUI, so it shows the newly updated information
+    }
+
+    savelist {
+    //save single todolist to external
+    - open external
+    - make save folder if not created
+    - take list and copies
+    - save to file location
+    - close location
+    }
+
+    saveall {
+    //save all todolist to external
+    - open external
+    - make save folder if not created
+    - run a loop to take all list and copies them
+    - closes location
+    }
+}
+
+class main {
+    //calls other class and starts up APP
+    - runs the mainMenu class to kickstart application
+}

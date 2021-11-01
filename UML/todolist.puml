@@ -1,0 +1,52 @@
+@startuml
+class todolist {
+    todolist is the list clicked on inside the main tab of the app
+    - added to the mainMenu (100x)
+    - can edit a description of the item
+    - can delete an item
+    - can make an item as complete/incomplete
+    - can show only completed/uncompleted items
+}
+
+entity createItem {
+his method creates an item inside a todolist
+}
+
+entity deleteItem {
+this method deletes an item inside a todolist
+}
+
+entity editItem {
+this method allows one to edit an item already inside a list
+}
+
+entity MarkasDone {
+this method will mark the item as complete
+}
+
+entity MarkasUndone {
+this method will mark the item as incomplete
+}
+
+entity showCompleted {
+this function changes the GUI in the todolist to show only completed items
+}
+
+entity showUncompleted {
+this function changes the GUI in the todolist to show only uncompleted items
+}
+
+entity showAll {
+this function changes the GUI in the todolist to show all items
+}
+
+todolist - createItem
+createItem - deleteItem
+deleteItem - editItem
+editItem - MarkasDone
+MarkasDone - MarkasUndone
+MarkasUndone - showCompleted
+showCompleted - showUncompleted
+showUncompleted - showAll
+showAll - todolist
+@enduml

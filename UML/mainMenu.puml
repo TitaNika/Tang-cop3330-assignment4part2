@@ -1,0 +1,35 @@
+@startuml
+class mainMenu {
+    //main app is the main tab of the application
+    - can create todoList
+    - can delete todoList
+    - can edit todoList
+    - can save a singular todoList
+    - can save all todoList
+}
+
+entity createNewTodo {
+creates a new todolist from the todoList class
+}
+entity deleteTodo {
+deletes a todolist when called
+}
+entity editTodo {
+edits a specific todolist
+}
+entity savelist {
+save single todolist to external
+}
+entity saveall {
+save all todolist to external
+}
+
+mainMenu - createNewTodo
+createNewTodo - deleteTodo
+deleteTodo - editTodo
+editTodo - savelist
+savelist - saveall
+saveall - mainMenu
+
+
+@enduml

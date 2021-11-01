@@ -1,0 +1,35 @@
+class todolist {
+
+    createItem method {
+- test ensures item is created with the properties desired
+    }
+
+    deleteItem method {
+- test ensures that item that was prompted to be deleted is deleted
+    }
+
+    editItem method {
+- test ensures the user are able to edit an existing item properties
+    }
+
+    MarkasDone method {
+- test ensures that list that were "marked" by user are to be displayed is true
+    }
+
+    MarkasUndone method {
+- test ensures that list that were not "marked" by user are to be displayed is true
+    }
+
+    showCompleted method {
+- test ensures that relationship between this and MarkasDone method is consistent
+    }
+
+    showUncompleted method {
+- test ensures that relationship between this and MarkasUndone method is consistent
+    }
+
+    showAll method {
+- test ensures that lists are shown from which list was stored from savelist/saveall method
+    }
+
+}

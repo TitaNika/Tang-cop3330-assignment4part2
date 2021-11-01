@@ -1,0 +1,22 @@
+class mainMenu {
+
+    createNewTodo {
+- test ensures list is created with the properties desired
+    }
+
+    deleteTodo {
+- test ensures that list that was prompted to be deleted is deleted
+    }
+
+    editTodo {
+- test ensures the user are able to edit an existing list's properties
+    }
+
+    savelist {
+- test ensures that the current list is saved when user hits "Save"
+    }
+
+    saveall {
+- test ensures that all lists are saved when user hits "SaveAll"
+    }
+}
