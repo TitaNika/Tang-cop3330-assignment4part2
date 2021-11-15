@@ -18,6 +18,7 @@ this method deletes an item inside a todolist
 
 entity editItem {
 this method allows one to edit an item already inside a list
+change due date if user wishes
 }
 
 entity MarkasDone {

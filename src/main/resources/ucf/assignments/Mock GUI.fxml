@@ -8,17 +8,20 @@
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.MainMenuController">
    <children>
       <MenuBar layoutX="7.0" layoutY="2.0" prefHeight="27.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Save" />
-                  <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem fx:id="Open" mnemonicParsing="false" onAction="#OpenList" text="Open" />
+                  <MenuItem fx:id="Save" mnemonicParsing="false" onAction="#SaveList" text="Save" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="New" />
+          <Menu mnemonicParsing="false" text="New">
+               <items>
+                  <MenuItem fx:id="CreateNew" mnemonicParsing="false" onAction="#CreateNewClicked" text="Create New List" />
+               </items></Menu>
         </menus>
       </MenuBar>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">

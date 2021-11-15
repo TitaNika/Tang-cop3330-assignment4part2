@@ -19,11 +19,12 @@ class todolist {
 
     stores a name string variable
 
-    stores a description string variable
+    stores a description string variable [256 limit]
 
     stores a date value
 
     stores items:
+
         allocate size 100 of items in from of array/stacks/queues
 
             - each item can hold a description string variable
@@ -44,6 +45,7 @@ class todolist {
         //this method allows one to edit an item already inside a list
         - open the New item edit.fxml Once details are entered, overwrite the specific desc. string variable
         - update the todolist, so it has the new details.
+        - edit due date
     }
 
     MarkasDone {
@@ -102,6 +104,7 @@ class mainMenu {
         //edits a specific todolist
         - opens the Edit.fxml
         - updates the GUI, so it shows the newly updated information
+        - due date edit
     }
 
     savelist {

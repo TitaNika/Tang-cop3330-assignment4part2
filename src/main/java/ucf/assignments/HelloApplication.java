@@ -1,3 +1,8 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Tony Tang
+ */
+
 package ucf.assignments;
 
 import javafx.application.Application;
@@ -17,7 +22,7 @@ public class HelloApplication extends Application {
         stage.show();
     }
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
         launch();
     }
 }
